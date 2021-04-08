@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MaterrialDesign</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="account_hint">请输入用户名</string>
+    <string name="message_icon_title">消息</string>
+    <string name="course_icon_title">课程</string>
+    <string name="account_icon_title">我的</string>
+</resources>

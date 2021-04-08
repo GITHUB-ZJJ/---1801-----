@@ -5,10 +5,6 @@
 
     <data>
 
-        <variable
-            name="mainViewModel"
-            type="com.example.materrialdesign.viewModel.MainViewModel" />
-
     </data>
 
     <RelativeLayout
@@ -30,14 +26,14 @@
 
             <Button
                 android:id="@+id/btn_login"
-                android:layout_alignParentLeft="true"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
-                android:text="@string/login"
-                android:textSize="20sp"
-                android:textColor="#ffffff"
+                android:layout_alignParentLeft="true"
                 android:background="@drawable/shape_login_btn"
-                android:onClick="@{() ->mainViewModel.btn_Login_onclick()}"
+                android:text="@string/login"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+
                 />
 
             <Button
@@ -49,7 +45,7 @@
                 android:textSize="20sp"
                 android:textColor="#ffffff"
                 android:background="@drawable/shape_register_btn"
-                android:onClick="@{()->mainViewModel.btn_Register_onclick()}"
+
                />
         </RelativeLayout>
 
