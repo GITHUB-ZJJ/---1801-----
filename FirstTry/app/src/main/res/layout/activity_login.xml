@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="loginViewModel"
+            type="" />
+
+    </data>
+    <RelativeLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="329dp"
+            android:scaleType="fitXY"
+            android:background="@mipmap/login"
+            />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:orientation="vertical"
+                android:background="@drawable/shape_login_form"
+                android:paddingLeft="43dp"
+                android:paddingRight="31dp"
+                android:layout_marginTop="278dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:gravity="center"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical">
+                    <ImageView
+
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/account"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="7dp"
+
+                        />
+                    <EditText
+
+                        android:text="@={loginViewModel.userName}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/account_hint"
+                        android:textColorHint="#bcbcbc"
+                        android:textColor="#000000"
+                        android:background="@null"
+                        android:textSize="18sp"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/devider"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginBottom="23dp"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical">
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/password"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="7dp"
+                        />
+                    <EditText
+
+                        android:text="@={loginViewModel.passWord}"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password_hint"
+                        android:textColorHint="#bcbcbc"
+                        android:textColor="#000000"
+                        android:background="@null"
+                        android:textSize="18sp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <Button
+                android:textSize="24dp"
+                android:textColor="#FFFFFF"
+                android:text="@string/login"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_login_btn"
+                android:layout_height="55dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="67dp"
+                android:onClick="@{()->loginViewModel.loginOnClick()}"
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</layout>
