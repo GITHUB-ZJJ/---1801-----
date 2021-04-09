@@ -14,22 +14,20 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
+        app:altSrc="@drawable/ic_baseline_account_box_fill"
+
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_account_box_stroke"
-        app:altSrc="@drawable/ic_baseline_account_box_fill"
-        />
+        app:srcCompat="@drawable/ic_baseline_account_box_stroke" />
 
     <TextView
         android:id="@+id/textView"
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="329dp"
         android:text="@string/account_icon_title"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

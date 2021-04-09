@@ -17,7 +17,7 @@
                 />
 
         </KeyFrameSet>
-
+        <OnClick/>
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
@@ -25,11 +25,11 @@
         <Constraint
             android:id="@+id/imageView"
             motion:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             motion:layout_constraintBottom_toTopOf="@+id/textView"
             motion:layout_constraintTop_toTopOf="parent"
-            motion:layout_constraintStart_toStartOf="parent">
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
 
             <CustomAttribute
@@ -39,15 +39,16 @@
                 motion:attributeName="crossfade"
                 motion:customFloatValue="0" />
         </Constraint>
+
         <Constraint
             android:id="@+id/textView"
             motion:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintTop_toBottomOf="@+id/imageView"
             motion:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="329dp" >
+            motion:layout_constraintHorizontal_bias="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
             <CustomAttribute
                 motion:attributeName="textColor"
                 motion:customColorValue="@color/black" />
@@ -60,9 +61,9 @@
 
         <Constraint
             android:id="@+id/imageView"
-            motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintBottom_toTopOf="@+id/textView"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent" >
@@ -75,20 +76,19 @@
         </Constraint>
         <Constraint
             android:id="@+id/textView"
-            motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
+            motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/imageView"
             motion:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="329dp" >
+            motion:layout_constraintTop_toBottomOf="@+id/imageView"
+           >
 
             <CustomAttribute
                 motion:attributeName="textColor"
                 motion:customColorValue="@color/teal_200" />
         </Constraint>
     </ConstraintSet>
-
-
 
 </MotionScene>

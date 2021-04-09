@@ -10,10 +10,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:orientation="horizontal"
+        android:baselineAligned="false"
         android:gravity="center_vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:baselineAligned="false">
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <include
             layout="@layout/course_icon_layout"
@@ -32,5 +32,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
