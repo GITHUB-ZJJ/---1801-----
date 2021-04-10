@@ -85,16 +85,18 @@
 
         </LinearLayout>
         <Button
+
             android:textSize="24dp"
             android:textColor="#FFFFFF"
-            android:text="@string/login"
+            android:text="@string/register"
             android:layout_gravity="center_vertical"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginLeft="18dp"
             android:layout_marginRight="18dp"
             android:layout_marginTop="67dp"
-            android:background="@drawable/login_btn_shape"
+            android:background="@drawable/shape_register_btn"
+            android:foreground="@drawable/ripple_foreground"
             />
 
     </LinearLayout>

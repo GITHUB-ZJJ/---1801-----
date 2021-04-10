@@ -11,4 +11,6 @@
     <color name="hint">#bcbcbc</color>
     <color name="red">#d71345</color>
     <color name="grey">#d9d6c3</color>
+    <color name="ripple_white">#d3d7d4</color>
+    <color name="course_item_background">#f2eada</color>
 </resources>

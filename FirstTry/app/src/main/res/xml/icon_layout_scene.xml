@@ -17,7 +17,6 @@
                 />
 
         </KeyFrameSet>
-        <OnClick/>
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
