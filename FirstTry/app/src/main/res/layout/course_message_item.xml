@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:focusable="true"
+    android:clickable="true"
+    >
+    <TextView
+        android:id="@+id/course_message_informer"
+        android:text="林秀丽"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        />
+    <TextView
+
+        android:id="@+id/course_message_action"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="老师发布了新课件"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/course_message_informer"
+
+        android:layout_alignParentTop="true"
+
+        />
+    <TextView
+        android:id="@+id/course_message_inform_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2021-03-28"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        />
+    <TextView
+        android:id="@+id/course_message_des"
+        android:text="工程伦理---工程伦理4 工程的风险 安全与责任已经发布，请尽快完成"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/devider"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
