@@ -63,6 +63,5 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
     //room的导入
     implementation 'androidx.room:room-runtime:2.1.0'
-
     kapt 'androidx.room:room-compiler:2.1.0'
 }
